@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Stopwatch with Ticks</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <main>
+            <div class="stopwatch">
+                <div class="clock-num" style="--i: 1">5</div>
+                <div class="clock-num" style="--i: 2">10</div>
+                <div class="clock-num" style="--i: 3">15</div>
+                <div class="clock-num" style="--i: 4">20</div>
+                <div class="clock-num" style="--i: 5">25</div>
+                <div class="clock-num" style="--i: 6">30</div>
+                <div class="clock-num" style="--i: 7">35</div>
+                <div class="clock-num" style="--i: 8">40</div>
+                <div class="clock-num" style="--i: 9">45</div>
+                <div class="clock-num" style="--i: 10">50</div>
+                <div class="clock-num" style="--i: 11">55</div>
+                <div class="clock-num" style="--i: 12">60</div>
+                <div class="ticks"></div>
+                <div class="hand"></div>
+                <div class="dot center-1"></div>
+                <div class="dot center-2"></div>
+                <div class="dot center-3"></div>
+            </div>
+
+            <div class="info">
+                <div class="laps-data">
+                    <table>
+                        <thead>
+                            <td>Lap Rank</td>
+                            <td>Lap Time</td>
+                            <td>Total</td>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+                <div class="controls">
+                    <div class="digital-stopwatch" id="digi-screen">
+                        <p id="hrs">00</p>
+                        <p class="colon">:</p>
+                        <p id="mins">00</p>
+                        <p class="colon">:</p>
+                        <p id="secs">00</p>
+                        <p class="colon">:</p>
+                        <p id="milis">000</p>
+                    </div>
+                    <div class="controls-btn">
+                        <button class="btn" id="start">Start</button>
+                        <button class="btn" id="record-lap">Lap</button>
+                        <button class="btn" id="pause-play">Pause</button>
+                        <button class="btn" id="reset">Reset</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <script src="script.js"></script>
+    </body>
+</html>
